@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: z2-elk-integration
+
+  jpa:
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+      ddl-auto: update
+    show-sql: true
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/z2
+    username: z2data
+    password: z2data
+    driver-class-name: org.postgresql.Driver
